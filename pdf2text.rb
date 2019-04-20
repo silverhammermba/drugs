@@ -96,6 +96,7 @@ class Parser
   end
 
   def process_section name, content
+    # TODO do nested bullets in categories
     if name == "Side Effects" && content =~ /:/
       categories = {}
       current_category = nil
@@ -111,6 +112,20 @@ class Parser
         end
       end
       content = categories
+    elsif content =~ /\A\s*#@bullet/
+      bullets = []
+      current_bullet = nil
+      content.each_line do |line|
+        if line =~ /^\s*#@bullet(.*)/
+          if current_bullet
+            bullets << current_bullet
+          end
+          current_bullet = $1.strip
+        else
+          current_bullet += " " + line.strip
+        end
+      end
+      content = bullets
     end
 
     return content
