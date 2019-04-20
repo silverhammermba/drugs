@@ -42,7 +42,6 @@ class Parser
         if @drug
           @data[@drug_name] = @drug
         end
-        # TODO: parse alternate names
         names = parse_name @previous_line_content
         @drug_name = names[0]
         @drug = {"Names" => names}
@@ -96,8 +95,38 @@ class Parser
   end
 
   def process_section name, content
-    # TODO do nested bullets in categories
-    if name == "Side Effects" && content =~ /:/
+    # nested bullets in categories
+    if content.each_line.first =~ /:\s*$/ && content.include?(@bullet)
+      categories = {}
+      current_category = nil
+      category_content = nil
+      current_bullet = nil
+
+      # TODO: this fucks up atropine sulfate
+      content.each_line do |line|
+        if line =~ /(.*):\s*$/
+          if current_category
+            categories[current_category] = category_content
+          end
+          current_category = $1.strip
+          category_content = []
+          current_bullet = nil
+        elsif line =~ /^\s*#@bullet(.*)/
+          if current_bullet
+            category_content << current_bullet
+          end
+          current_bullet = $1.strip
+        else
+          if !current_bullet
+            current_bullet = line.strip
+          else
+            current_bullet += " " + line.strip
+          end
+        end
+      end
+      content = categories
+    # categories, no bullets inside
+    elsif content.each_line.first =~ /:.*$/
       categories = {}
       current_category = nil
       category_content = nil
@@ -112,6 +141,7 @@ class Parser
         end
       end
       content = categories
+    # just bullets
     elsif content =~ /\A\s*#@bullet/
       bullets = []
       current_bullet = nil
@@ -126,6 +156,8 @@ class Parser
         end
       end
       content = bullets
+    else # generaly section content
+      content = content.strip.gsub("\n", " ")
     end
 
     return content
