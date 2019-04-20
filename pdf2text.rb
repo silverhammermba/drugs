@@ -102,7 +102,8 @@ class Parser
       category_content = nil
       current_bullet = nil
 
-      # TODO: this fucks up atropine sulfate
+      # TODO: should be more general, category might have a new line, else a bullet
+      # e.g. Amiodarone
       content.each_line do |line|
         if line =~ /(.*):\s*$/
           if current_category
@@ -124,6 +125,7 @@ class Parser
           end
         end
       end
+      categories[current_category] = category_content
       content = categories
     # categories, no bullets inside
     elsif content.each_line.first =~ /:.*$/
@@ -140,6 +142,7 @@ class Parser
           category_content += " " + line.strip
         end
       end
+      categories[current_category] = category_content
       content = categories
     # just bullets
     elsif content =~ /\A\s*#@bullet/
@@ -155,6 +158,7 @@ class Parser
           current_bullet += " " + line.strip
         end
       end
+      bullets << current_bullet
       content = bullets
     else # generaly section content
       content = content.strip.gsub("\n", " ")
