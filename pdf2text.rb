@@ -7,14 +7,12 @@ class Parser
     sections = ["Classification", "Therapeutic Effects", "Indications", "Contraindications", "Side Effects", "Adult Dosing", "Pediatric Dosing", "Notes & Precautions"]
     @secreg = Regexp.new("^ ?(#{Regexp.union(sections).source})")
 
-    @data = {}
+    @data = []
     @previous_line_content = nil
-    @drug_name = nil
     @section = nil
     @section_padding = nil
     @section_content = nil
     @drug = nil
-
   end
 
   def parse_line line
@@ -38,10 +36,9 @@ class Parser
       if section == "Classification"
         # save previous drug
         if @drug
-          @data[@drug_name] = @drug
+          @data << @drug
         end
         names = parse_name @previous_line_content
-        @drug_name = names[0]
         @drug = {"Names" => names}
       end
 
@@ -69,8 +66,7 @@ class Parser
     drug = @drug.dup
     data = @data.dup
     drug[@section] = process_section @section, @section_content
-    data[@drug_name] = drug
-    data
+    data << drug
   end
 
   private
@@ -103,7 +99,7 @@ class Parser
 
       content.each_line do |line|
         # start of a new category
-        if line =~ /^([^•]*?):(.*)/
+        if line =~ /^\s*([a-z][^•]*?):(.*)/i
           if category
             # save last item in category
             if category_content
