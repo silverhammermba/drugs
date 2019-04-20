@@ -57,7 +57,7 @@ drug_data = [
       "Gastrointestinal": "nausea, vomiting, constipation, abdominal pain, diarrhea"
     },
     "Adult Dosing": "1 g/kg PO or via naso-/orogastric tube (50 g and 75 g are typical doses)",
-    "Pediatric Dosing": "Same as adult dosing",
+    "Pediatric Dosing": "Same as adult",
     "Notes & Precautions": [
       "Activated charcoal is often supplied with sorbitol, a hypertonic sugar that acts as a laxative.",
       "It is supplied in bottles or tubes as a suspension that must be shaken vigorously prior to administration. Because the contents may consolidate in the bottle before use, the container is sometimes kneaded to distribute the medication throughout the liquid.",
@@ -361,7 +361,7 @@ drug_data = [
       "Other": "nausea, diaphoresis, tinnitus, urticarial, rash"
     },
     "Adult Dosing": "Spray or use applicator to apply directly to area",
-    "Pediatric Dosing": "Same as adult dosing",
+    "Pediatric Dosing": "Same as adult",
     "Notes & Precautions": [
       "Benzocaine is administered for external topical use only.",
       "It is supplied in multiple application mechanisms and concentrations. Anesthetic sprays are supplied in 5% and 20% concentrations.",
@@ -1000,7 +1000,7 @@ drug_data = [
       "Other": "nausea, GI distress, mouth and throat dryness and irritation, coughing"
     },
     "Adult Dosing": "500 mcg nebulized (in combination with albuterol), repeated as indicated",
-    "Pediatric Dosing": "Same as adult dosing",
+    "Pediatric Dosing": "Same as adult",
     "Notes & Precautions": [
       "In prehospital emergency care, ipratropium is nebulized in combination with albuterol with an oxygen flow rate of 6–8 L/min. The trade name of this premixed solution is DuoNeb. The same combination is also available via metered-dose inhaler with the trade name of Combivent.",
       "Ipratropium is not significantly absorbed into the systemic circulation, nor does it appear to cross the blood-brain barrier, so it does not exert significant systemic anticholinergic effects that might otherwise be anticipated.",
@@ -1036,7 +1036,7 @@ drug_data = [
         "It may also be administered intranasally in some systems"
       ]
     },
-    "Pediatric Dosing": "Same as adult dosing",
+    "Pediatric Dosing": "Same as adult",
     "Notes & Precautions": [
       "The onset of action is 30–60 seconds (IV) and 3–5 min (IM). The duration of action is 10–15 min (IV) and 20–30 min (IM).",
       "Ketamine is available in a number of concentrations, but the optimal one for IM use is 100 mg/mL. This concentration should be diluted with NSS before IV administration.",
@@ -1521,7 +1521,7 @@ drug_data = [
       "Other": "nausea, vomiting, increased pulmonary vascular resistance"
     },
     "Adult Dosing": "A blended mixture of 50% nitrous oxide and 50% oxygen is self-administered via modified demand valve until pain/anxiety is relieved, adverse effects are experienced, or the patient drops the administration device.",
-    "Pediatric Dosing": "Same as adult dosing",
+    "Pediatric Dosing": "Same as adult",
     "Notes & Precautions": [
       "It should only be used in a well-ventilated area.",
       "The duration of action is brief (less than 5 minutes) after the gas administration is discontinued.",
@@ -1765,7 +1765,7 @@ drug_data = [
       "Other": "metabolic alkalosis, hypernatremia, hyperosmolarity, paradoxical acidosis"
     },
     "Adult Dosing": "1 mEq/kg slow IVP (more quickly during cardiac arrest)",
-    "Pediatric Dosing": "Same as adult dosing",
+    "Pediatric Dosing": "Same as adult",
     "Notes & Precautions": [
       "In some systems, the initial doses listed above can either be doubled or repeated.",
       "Sodium bicarbonate (NaHCO ) will precipitate when mixed with calcium 3 chloride. Use separate IV lines to administer each medication, if possible. If only one IV line is available, be sure to flush the tubing copiously before and after each medication is pushed.",
