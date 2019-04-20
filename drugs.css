@@ -2,10 +2,22 @@ section > div {
 	border: 1px solid black;
 }
 
-div.correct.clicked {
+h3.drug_name {
+	display: none;
+}
+
+section > div.correct.clicked {
 	background-color: green;
 }
 
-div.clicked {
+section > div.clicked {
 	background-color: red;
+}
+
+section > div.clicked h3.drug_name {
+	display: block;
+}
+
+section > div.clicked.correct h3.drug_name {
+	display: none;
 }

@@ -30,8 +30,16 @@ window.sections = [
     "Notes & Precautions"
 ]
 
-function format_append_section(name, section, element, level, correct) {
+function format_append_section(name, section, element, level, correct, drug_name) {
 	var div = document.createElement('div');
+
+	if (drug_name) {
+		var header = document.createElement('h' + level);
+		header.classList.add('drug_name');
+		header.innerHTML = drug_name;
+		div.appendChild(header);
+	}
+
 	div.addEventListener("click", function() {
 		div.classList.add('clicked');
 	});
@@ -54,7 +62,7 @@ function format_append_section(name, section, element, level, correct) {
 		div.appendChild(list);
 	} else if (section && (typeof section === "object")) {
 		for (var subsection in section) {
-			format_append_section(subsection, section[subsection], div, level + 1, correct);
+			format_append_section(subsection, section[subsection], div, level + 1);
 		}
 	} else if (typeof section === "string") {
 		var par = document.createElement('p');
@@ -70,13 +78,17 @@ function format_append_section(name, section, element, level, correct) {
 function drug_h2(drug) {
 	// title
 	var title = document.createElement('h2');
+	title.innerHTML = drug_name(drug);
+
+	return title;
+}
+
+function drug_name(drug) {
 	var title_text = drug.Names[0];
 	if (drug.Names.length > 1) {
 		title_text = title_text + " (" + drug.Names.slice(1).join(", ") + ")"
 	}
-	title.innerHTML = title_text;
-
-	return title;
+	return title_text;
 }
 
 function create_drug_element(drug) {
@@ -100,18 +112,12 @@ function create_random_section_element(drugs) {
 
 	var random_section = sections.randomElement();
 
-	var choices = [];
+	var shuffled_drugs = shuffleArray(selection);
 
-	for (var i = 0; i < selection.length; ++i) {
-		choices.push(selection[i][random_section]);
-	}
-
-	choices = shuffleArray(choices);
-	console.log(choices)
-
-	for (var i = 0; i < choices.length; ++i) {
-		var correct = (choices[i] === selection[0][random_section]);
-		format_append_section(random_section, choices[i], element, 3, correct);
+	for (var i = 0; i < shuffled_drugs.length; ++i) {
+		var correct = (shuffled_drugs[i][random_section] === selection[0][random_section]);
+		var actual_drug = drug_name(shuffled_drugs[i]);
+		format_append_section(random_section, shuffled_drugs[i][random_section], element, 3, correct, actual_drug);
 	}
 
 	return element
