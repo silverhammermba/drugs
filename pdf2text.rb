@@ -15,8 +15,6 @@ class Parser
     @section_content = nil
     @drug = nil
 
-    @box = 0x25af.chr Encoding::UTF_8
-    @bullet = 0x2022.chr Encoding::UTF_8
   end
 
   def parse_line line
@@ -77,8 +75,8 @@ class Parser
 
   private
   def clean_bullet line
-    if !line.empty? && line =~ /^\s*#$box/
-      line.sub @box, @bullet
+    if !line.empty? && line =~ /^\s*▯/
+      line.sub ?▯, ?•
     else
       line
     end
@@ -95,61 +93,67 @@ class Parser
   end
 
   def process_section name, content
-    # nested bullets in categories
-    if content.each_line.first =~ /:\s*$/ && content.include?(@bullet)
-      categories = {}
-      current_category = nil
-      category_content = nil
-      current_bullet = nil
+    # if the section is split into categories
+    if content.each_line.first =~ /^([^•]*):/
 
-      # TODO: should be more general, category might have a new line, else a bullet
-      # e.g. Amiodarone
-      content.each_line do |line|
-        if line =~ /(.*):\s*$/
-          if current_category
-            categories[current_category] = category_content
-          end
-          current_category = $1.strip
-          category_content = []
-          current_bullet = nil
-        elsif line =~ /^\s*#@bullet(.*)/
-          if current_bullet
-            category_content << current_bullet
-          end
-          current_bullet = $1.strip
-        else
-          if !current_bullet
-            current_bullet = line.strip
-          else
-            current_bullet += " " + line.strip
-          end
-        end
-      end
-      categories[current_category] = category_content
-      content = categories
-    # categories, no bullets inside
-    elsif content.each_line.first =~ /:.*$/
       categories = {}
-      current_category = nil
       category_content = nil
+      next_category_content = nil
+      category = nil
+
       content.each_line do |line|
-        if line =~ /:/
-          if current_category
-            categories[current_category] = category_content
+        # start of a new category
+        if line =~ /^([^•]*?):(.*)/
+          if category
+            # save last item in category
+            if category_content
+              category_content << next_category_content
+            else # it's one paragraph, we haven't saved it yet
+              category_content = next_category_content
+            end
+            categories[category] = category_content
           end
-          current_category, category_content = line.split(?:, 2).map(&:strip)
+          category = $1.strip
+          category_content = nil
+          # assumes we don't have a bullet right after a category name
+          next_category_content = $2.strip
+          next_category_content = nil if next_category_content.empty?
+        # start of a new bullet point
+        elsif line =~ /^\s*•(.*)/
+          unless category_content
+            category_content = []
+          end
+          if next_category_content
+            # assume we must have a list of bullet points by now
+            category_content << next_category_content
+          end
+          next_category_content = $1.strip
+        # start of a new paragraph, or continuation of a bullet point/paragraph
         else
-          category_content += " " + line.strip
+          if next_category_content
+            next_category_content += " " + line.strip
+          else
+            next_category_content = line.strip
+          end
         end
       end
-      categories[current_category] = category_content
+
+      # save last item in category
+      if category_content
+        category_content << next_category_content
+      else # it's one paragraph, we haven't saved it yet
+        category_content = next_category_content
+      end
+      categories[category] = category_content
+
       content = categories
-    # just bullets
-    elsif content =~ /\A\s*#@bullet/
+
+    elsif content =~ /\A\s*•/
       bullets = []
       current_bullet = nil
+
       content.each_line do |line|
-        if line =~ /^\s*#@bullet(.*)/
+        if line =~ /^\s*•(.*)/
           if current_bullet
             bullets << current_bullet
           end
@@ -158,9 +162,10 @@ class Parser
           current_bullet += " " + line.strip
         end
       end
+
       bullets << current_bullet
       content = bullets
-    else # generaly section content
+    else # general section content
       content = content.strip.gsub("\n", " ")
     end
 
