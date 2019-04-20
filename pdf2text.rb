@@ -34,17 +34,18 @@ class Parser
     if match = @secreg.match(line)
       section = match[0].strip
 
+      save_current_section
+
       # first section, now we know what the drug is and can save the previous one
       if section == "Classification"
+        # save previous drug
         if @drug
-          @drug[@section] = @section_content
           @data[@drug_name] = @drug
         end
         # TODO: parse alternate names
-        @drug_name = @previous_line_content
-        @drug = {}
-      else # if it's the start of any other section, save the previous section
-        @drug[@section] = @section_content
+        names = parse_name @previous_line_content
+        @drug_name = names[0]
+        @drug = {"Names" => names}
       end
 
       @section = section
@@ -70,7 +71,7 @@ class Parser
     # return data plus whatever partial content we have leftover
     drug = @drug.dup
     data = @data.dup
-    drug[@section] = @section_content
+    drug[@section] = process_section @section, @section_content
     data[@drug_name] = drug
     data
   end
@@ -82,6 +83,47 @@ class Parser
     else
       line
     end
+  end
+
+  def parse_name name
+    if name =~ /(.*)\((.*)\)/
+      canon = $1.strip
+      others = $2.split(?,).map(&:strip)
+      return [canon]+others
+    else
+      return [name]
+    end
+  end
+
+  def process_section name, content
+    if name == "Side Effects" && content =~ /:/
+      categories = {}
+      current_category = nil
+      category_content = nil
+      content.each_line do |line|
+        if line =~ /:/
+          if current_category
+            categories[current_category] = category_content
+          end
+          current_category, category_content = line.split(?:, 2).map(&:strip)
+        else
+          category_content += " " + line.strip
+        end
+      end
+      content = categories
+    end
+
+    return content
+  end
+
+  def save_current_section
+    return unless @drug
+
+    content = process_section @section, @section_content
+
+    @drug[@section] = content
+    @section = nil
+    @section_content = nil
   end
 end
 
