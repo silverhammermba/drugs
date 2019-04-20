@@ -312,7 +312,7 @@ drug_data = [
       ],
       "Organophosphate and Carbamate Poisoning": [
         "0.25-6 mg IM initial dose, depending on the patient’s body mass and the symptom severity",
-        "0.05 mg/kg IVP initial dose; double the dose every 5 min until signs/symptoms are reversed (proper atropinization is evident) ***CONTINUED ON NEXT PAGE***"
+        "0.05 mg/kg IVP initial dose; double the dose every 5 min until signs/symptoms are reversed (proper atropinization is evident)"
       ]
     },
     "Notes & Precautions": [
@@ -525,7 +525,7 @@ drug_data = [
       "Procedural sedation": [
         "0.1 mg/kg (up to 5 mg) IVP at 5 mg/min; this dose may be repeated every 5 min to a total of 0.3 mg/kg",
         "Only one dose is used for synchronized cardioversion.",
-        "Although the IM route is authorized for patients with agitated behavior, it is not preferred (administer another benzodiazepine if it’s available). ***CONTINUED ON NEXT PAGE***"
+        "Although the IM route is authorized for patients with agitated behavior, it is not preferred (administer another benzodiazepine if it’s available)."
       ]
     },
     "Notes & Precautions": [
@@ -770,7 +770,7 @@ drug_data = [
       "Cardiac arrest/unstable bradcardia": "0.01 mg/kg (1:10,000) IVP every 3-5 min OR 0.1 mg/kg ET (see Notes below)",
       "Hypotension post-ROSC": "10 mcg IVP every 2 min (lower doses may be effective)",
       "Allergic reaction/anaphylaxis/asthma": "0.01 mg/kg (1:1000) IM (may sometimes be repeated in 5-15 min)",
-      "Croup/stridor/upper airway edema (NOT from epiglottitis)": "0.5 mL 2.25% racemic epinephrine mixed with 2 mL NSS and nebulized OR 5 mg (1:1000) epinephrine nebulized (if racemic epi is unavailable) ***CONTINUED ON NEXT PAGE***"
+      "Croup/stridor/upper airway edema (NOT from epiglottitis)": "0.5 mL 2.25% racemic epinephrine mixed with 2 mL NSS and nebulized OR 5 mg (1:1000) epinephrine nebulized (if racemic epi is unavailable)"
     },
     "Notes & Precautions": [
       "The 1:10,000 concentration is now more commonly referenced as 0.1 mg/mL, and the 1:1000 concentration is 1 mg/mL.",
@@ -1136,7 +1136,7 @@ drug_data = [
         "The same dose may be repeated in 5-15 min, depending on the protocol",
         "Maintenance infusion: 20-50 mcg/kg/min IV"
       ],
-      "Analgesia prior to IO infusion": "Same as adult ***CONTINUED ON NEXT PAGE***"
+      "Analgesia prior to IO infusion": "Same as adult"
     },
     "Notes & Precautions": [
       "To prepare a lidocaine infusion, mix 100 mg of lidocaine in 100 mL of D<sub>5</sub>W or NSS (for a 1 mg/mL concentration). The infusion rate in mg/min should be rounded up to the nearest whole number higher than the total dose pushed in mg/kg. For example, a single 1.5 mg/kg loading dose would be followed with a 2 mg/min maintenance infusion.",
@@ -1333,7 +1333,7 @@ drug_data = [
       "Procedural sedation/agitated behavior": [
         "0.05 mg/kg (up to 2 mg) slow IVP; this dose may be repeated once in 5 min",
         "Only one dose is used for synchronized cardioversion",
-        "It may also be administered IM/IN for agitated behavior ***CONTINUED ON NEXT PAGE***"
+        "It may also be administered IM/IN for agitated behavior"
       ]
     },
     "Notes & Precautions": [
@@ -1650,7 +1650,7 @@ drug_data = [
     ],
     "Contraindications": "No significant contraindications exist during short-term, prehospital emergency care when oxygen (O<sub>2</sub> is used within appropriate guidelines.",
     "Side Effects": [
-      "Generally, there are no significant side effects when2O is appropriately administered during short-term, prehospital emergency care.",
+      "Generally, there are no significant side effects when O<sub>2</sub> is appropriately administered during short-term, prehospital emergency care.",
       "Serious complications may result, however, when inappropriately high concentrations are delivered to ACS, CVA, COPD, and post-ROSC   patient."
     ],
     "Adult Dosing": "Device                O<sub>2</sub> flow Rate         O<sub>2</sub> concentration",
@@ -1661,7 +1661,7 @@ drug_data = [
     ],
     "Notes & Precautions": [
       "Never withhold oxygen from a patient who needs it!",
-      "Generally, titrate the 2 flow rate for most patients to achieve an S2O of 94-99% in order to avoid complications relating to hyperoxia. The optimal SpO<sub>2</sub> for some patients with COPD may be as low as 88-92%.",
+      "Generally, titrate the 2 flow rate for most patients to achieve an SpO<sub>2</sub> of 94-99% in order to avoid complications relating to hyperoxia. The optimal SpO<sub>2</sub> for some patients with COPD may be as low as 88-92%.",
       "In cases of carbon monoxide or cyanide exposure, administer the highest possible O2concentration since pulse oximetry will be unreliable.",
       "Oxygen administration is not routinely used in the initial resuscitation of newborns because of the toxic risks to certain cells, to include retrolental fibroplasia (usually associated with long-term O<sub>2</sub> therapy). When it is administered, however, the flow rate should be carefully titrated to achieve the SpO<sub>2</sub> target as specified in current AHA guidelines.",
       "Avoid excessive O<sub>2</sub> administration in patients with a paraquat (an herbicide) exposure because it will worsen toxicity."
