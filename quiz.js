@@ -32,6 +32,10 @@ window.sections = [
 
 function format_append_section(name, section, element, level, correct) {
 	var div = document.createElement('div');
+	div.addEventListener("click", function() {
+		div.classList.add('clicked');
+	});
+
 	if (correct) {
 		div.classList.add('correct');
 	}

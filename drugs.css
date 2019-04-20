@@ -1,0 +1,11 @@
+section > div {
+	border: 1px solid black;
+}
+
+div.correct.clicked {
+	background-color: green;
+}
+
+div.clicked {
+	background-color: red;
+}

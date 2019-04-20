@@ -3,7 +3,8 @@ drug_data = [
   {
     "Names": [
       "Acetaminophen",
-      "Tylenol"
+      "Tylenol",
+      "APAP"
     ],
     "Classification": "Analgesic, antipyretic",
     "Therapeutic Effects": [
