@@ -117,6 +117,7 @@ function create_random_section_element(drugs) {
 	for (var i = 0; i < shuffled_drugs.length; ++i) {
 		var correct = (shuffled_drugs[i][random_section] === selection[0][random_section]);
 		var actual_drug = drug_name(shuffled_drugs[i]);
+		// TODO: only shows one drug, even when multiple have the same text
 		format_append_section(random_section, shuffled_drugs[i][random_section], element, 3, correct, actual_drug);
 	}
 

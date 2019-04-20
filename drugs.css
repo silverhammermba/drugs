@@ -7,7 +7,7 @@ h3.drug_name {
 }
 
 section > div.correct.clicked {
-	background-color: green;
+	background-color: #60d560;
 }
 
 section > div.clicked {
