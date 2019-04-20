@@ -1,3 +1,4 @@
+// TODO: parse this into Ruby and do some simple normalization
 drug_data = [
   {
     "Names": [
@@ -1437,7 +1438,8 @@ drug_data = [
       "Some opioids may require larger doses of naloxone than those listed above.",
       "The dosing regimen listed above reflects current PA State EMS Protocols. Many EMS systems utilize lower repeat doses which are often more appropriate for certain patients.",
       "Naloxone should be administered before intubating patients with suspected opioid overdose.",
-      "If no response is noted after multiple doses of naloxone have been administered, the etiology of the altered level of consciousness should be questioned and a different treatment strategy should be considered. Common Opioids Codeine           Heroin       Nubain                   Talwin Darvocet/Darvon Lomotil        Oxycontin/MS-Contin      Tramadol Demerol           Methadone    Percocet/Percodan        Vicodin Dilaudid          Norco        Stadol"
+      "If no response is noted after multiple doses of naloxone have been administered, the etiology of the altered level of consciousness should be questioned and a different treatment strategy should be considered.",
+      "Common Opioids: Codeine, Heroin, Nubain, Talwin, Darvocet/Darvon, Lomotil, Oxycontin/MS-Contin, Tramadol, Demerol, Methadone, Percocet/Percodan, Vicodin, Dilaudid, Norco, Stadol"
     ]
   },
   {
@@ -1470,9 +1472,7 @@ drug_data = [
     },
     "Adult Dosing": {
       "Chest discomfort/ACS": "0.4 mg SL every 3–5 min, repeated as indicated with no maximum dose",
-      "Acute decompensated heart failure (CHF)": "initial dose is 0.4 mg SL,",
-      "repeated every 3–5 min as indicated based on the following systolic BP scale": "> 180: 1.2 mg (three 0.4 mg doses) 140–180: 0.8 mg (two 0.4 mg doses) 100–140: 0.4 mg",
-      "Alternatively": "5–200 mcg/min IV infusion (based on BP) or 1–2” of paste; Do not decrease the systolic BP by > 25% when administered by any route"
+      "Acute decompensated heart failure (CHF)": "initial dose is 0.4 mg SL, repeated every 3–5 min as indicated based on the following systolic BP scale. > 180: 1.2 mg (three 0.4 mg doses); 140–180: 0.8 mg (two 0.4 mg doses); 100–140: 0.4 mg. Alternatively: 5–200 mcg/min IV infusion (based on BP) or 1–2\" of paste; Do not decrease the systolic BP by > 25% when administered by any route"
     },
     "Pediatric Dosing": "Not recommended for pediatric use",
     "Notes & Precautions": [
@@ -1564,7 +1564,7 @@ drug_data = [
       ]
     },
     "Notes & Precautions": [
-      "NSS is a universal IV fluid that can be used in any emergency.",
+      "NSS is a <em>universal IV</em> fluid that can be used in any emergency.",
       "Excessive fluid resuscitation may lead to increased bleeding and to the disruption of the clotting process. In addition, the blood’s oxygen-carrying capability may be diminished. Therefore, fluid resuscitation in patients with uncontrolled hemorrhage and shock should be titrated to achieve minimum signs of adequate perfusion (improvement in mentation, peripheral pulses, and skin color/temperature plus a systolic BP of 70–90 mmHg).",
       "Patients with both hemorrhagic shock and a severe head injury may require enough NSS to achieve a systolic BP ≥ 110 mmHg.",
       "Use caution with the elderly and the very ill, as they may develop new onset pulmonary edema with smaller infusion volumes. Reassess more frequently.",
