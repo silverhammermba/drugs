@@ -323,7 +323,7 @@ drug_data = [
       "Atropine should be not used in neonates.",
       "Organophosphates and carbamates are found in pesticide products, such as flea and tick collars, ant and roach sprays/traps, and bug bombs. Signs of proper atropinization:",
       "Shortness and breath and wheezing decrease",
-      "Heart rate, BP, SpO ,2tidal volume, and BVM compliance improve",
+      "Heart rate, BP, SpO<sub>2</sub>, tidal volume, and BVM compliance improve",
       "Skin and visible secretions dry",
       "Level of consciousness may improve Mnemonic for signs of excess atropine administration:",
       "Red as a beet (flushing)",
@@ -1661,9 +1661,9 @@ drug_data = [
     ],
     "Notes & Precautions": [
       "Never withhold oxygen from a patient who needs it!",
-      "Generally, titrate the 2 flow rate for most patients to achieve an S2O of 94-99% in order to avoid complications relating to hyperoxia. The optimal SpO for some patients with COPD may be as low as 88-92%. 2",
+      "Generally, titrate the 2 flow rate for most patients to achieve an S2O of 94-99% in order to avoid complications relating to hyperoxia. The optimal SpO<sub>2</sub> for some patients with COPD may be as low as 88-92%.",
       "In cases of carbon monoxide or cyanide exposure, administer the highest possible O2concentration since pulse oximetry will be unreliable.",
-      "Oxygen administration is not routinely used in the initial resuscitation of newborns because of the toxic risks to certain cells, to include retrolental fibroplasia (usually associated with long-term O<sub>2</sub> therapy). When it is administered, however, the flow rate should be carefully titrated to achieve the SpO2target as specified in current AHA guidelines.",
+      "Oxygen administration is not routinely used in the initial resuscitation of newborns because of the toxic risks to certain cells, to include retrolental fibroplasia (usually associated with long-term O<sub>2</sub> therapy). When it is administered, however, the flow rate should be carefully titrated to achieve the SpO<sub>2</sub> target as specified in current AHA guidelines.",
       "Avoid excessive O<sub>2</sub> administration in patients with a paraquat (an herbicide) exposure because it will worsen toxicity."
     ]
   },
