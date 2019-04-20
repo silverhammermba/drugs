@@ -133,7 +133,7 @@ drug_data = [
       "Neurological": "headache, dizziness, diaphoresis, tremors, nervousness, hyperactivity"
     },
     "Adult Dosing": [
-      "2.5 mg in 3 mL NSS nebulized with an O flo2 rate of 6-8 L/min, repeated as indicated",
+      "2.5 mg in 3 mL NSS nebulized with an O<sub>2</sub> flow rate of 6-8 L/min, repeated as indicated",
       "1-2 puffs can be also be administered by inhaler (usually 90 mcg/inhalation)"
     ],
     "Pediatric Dosing": [
@@ -142,7 +142,7 @@ drug_data = [
     ],
     "Notes & Precautions": [
       "Albuterol is administered in prehospital care via hand-held, mask, and in- line nebulizers.",
-      "Delivering albuterol with an O 2low rate of >10 L/min only evaporates the albuterol faster without adding any therapeutic benefit.",
+      "Delivering albuterol with an O<sub>2</sub> flow rate of >10 L/min only evaporates the albuterol faster without adding any therapeutic benefit.",
       "Instruct the patient to breathe normally for a minute or two and then to inhale slowly and deeply. He should hold the albuterol in his lungs for several seconds after every 5-10 breaths, if possible.",
       "Spacers should be strongly considered with the use of MDIs to enhance the medication delivery for pediatric and compromised adult patients.",
       "It may be mixed and nebulized with 500 mcg of ipratropium bromide.",
@@ -201,7 +201,7 @@ drug_data = [
       "Use an in-line filter for all infusions when one is available.",
       "Amiodarone may be used for certain SVTs after standard therapies fail.",
       "Its half-life may be as long as several weeks.",
-      "Use caution in patients with renal or hepatic dysfunction and in pregnant patients. Ammonia Inhalants"
+      "Use caution in patients with renal or hepatic dysfunction and in pregnant patients."
     ]
   },
   {
@@ -231,7 +231,7 @@ drug_data = [
       "Use caution in all patients when an ALS mechanism or concern exists. Treat with the appropriate protocol instead.",
       "Syncope may indicate a significant underlying illness or injury.",
       "Ammonia inhalants should not be used as a diagnostic tool to differentiate patients with a true altered level of consciousness from those who are faking unresponsiveness.",
-      "Store away from direct heat and light. Aspirin"
+      "Store away from direct heat and light."
     ]
   },
   {
@@ -271,7 +271,7 @@ drug_data = [
       "Emergency Medical Dispatchers may have directed the potential ACS patient to self-administer aspirin prior to the ambulance arrival.",
       "Other classifications of aspirin include: analgesic, antipyretic, and NSAID (non-steroidal anti-inflammatory drug).",
       "It is not recommended in pediatric patients due to the increased risk of developing Reye’s Syndrome.",
-      "AIA (aspirin-induced asthma), also known as AERD (aspirin-exacerbated respiratory disease) or Samter’s Triad, is a hypersensitivity reaction to aspirin that involves nasal polyps, rhinosinusitis, and asthma. Atropine Sulfate"
+      "AIA (aspirin-induced asthma), also known as AERD (aspirin-exacerbated respiratory disease) or Samter’s Triad, is a hypersensitivity reaction to aspirin that involves nasal polyps, rhinosinusitis, and asthma."
     ]
   },
   {
@@ -362,7 +362,7 @@ drug_data = [
       "It is supplied in multiple application mechanisms and concentrations. Anesthetic sprays are supplied in 5% and 20% concentrations.",
       "The onset of action is generally 1 minute, and the duration of action is often between 15-20 minutes.",
       "It is minimally absorbed into the systemic circulation, so side effects are rare.",
-      "It should be stored in a temperature range of 59-86 degrees Fahrenheit. Calcium Chloride"
+      "It should be stored in a temperature range of 59-86 degrees Fahrenheit."
     ]
   },
   {
@@ -397,7 +397,7 @@ drug_data = [
       "CaCl will precipitate with sodium bicarbonate. Use separate IV lines to administer each medication, if possible. If only one IV line is available, be sure to flush the tubing copiously before and after each medication is pushed.",
       "In some systems, doses as low as 2-4 mg/kg may be given prior to calcium channel blocker (verapamil or diltiazem) administration to prevent hypotension.",
       "CaCl is sometimes used to treat magnesium toxicity in pregnant women who are receiving an IV infusion of the medication.",
-      "Administer CaCl with extreme caution, if at all, to patients who are taking digitalis, as doing so may precipitate digitalis toxicity. Consider administering smaller doses more slowly. Captopril (Capoten)"
+      "Administer CaCl with extreme caution, if at all, to patients who are taking digitalis, as doing so may precipitate digitalis toxicity. Consider administering smaller doses more slowly."
     ]
   },
   {
@@ -448,7 +448,7 @@ drug_data = [
     "Notes & Precautions": [
       "D<sub>5</sub>W5is supplied in 25-1000 mL bags, although the 100 mL and 250 mL ones are the most commonly used sizes in ambulances.",
       "Because D<sub>5</sub>W is a hypotonic crystalloid solution, its water content will 5 begin to leave the intravascular space within 10-20 minutes.",
-      "Dextrose 5% is sometimes premixed with: 0.9% NaCl solution (D 5S) 0.45% NaCl solution (D 5½NS) 0.225% NaCl solution (D -¼NS) 5 Lactated Ringer’s Solution (D5LR) These solutions are rarely used for prehospital emergency care and are most often utilized during interfacility transfers or for long-term care when patients require a constant infusion of both water and glucose."
+      "Dextrose 5% is sometimes premixed with: 0.9% NaCl solution (D<sub>5</sub>NS), 0.45% NaCl solution (D<sub>5</sub>-½NS), 0.225% NaCl solution (D<sub>5</sub>-¼NS), Lactated Ringer’s Solution (D<sub>5</sub>LR). These solutions are rarely used for prehospital emergency care and are most often utilized during interfacility transfers or for long-term care when patients require a constant infusion of both water and glucose."
     ]
   },
   {
@@ -467,17 +467,17 @@ drug_data = [
     ],
     "Side Effects": "A feeling of warmth or pain at injection site, phlebitis",
     "Adult Dosing": "25 g IV push/infusion over several minutes (see Notes below)",
-    "Pediatric Dosing": "0.5 g/kg of D25/D  12.5/D W10V over several minutes (see Notes below)",
+    "Pediatric Dosing": "0.5 g/kg of D<sub>25</sub>W/D<sub>12.5</sub>W/D<sub>10</sub>W IV over several minutes (see Notes below)",
     "Notes & Precautions": [
       "Never withhold dextrose from a patient who needs it.",
       "In some EMS protocols, only 12.5 g of dextrose is administered to adults, and this dose will usually achieve a normal blood glucose level.",
-      "Dextrose may be administered in any concentration to adults. To administer 25 g of dextrose, administer 50 mL of D 50slow IVP or infuse 250 mL of D 10over several minutes.",
-      "The pediatric dose of 0.5 g/kg is equivalent to the following volumes : 1. D W25for all pediatric patients except neonates): 2 mL/kg 2. D  12.5(used primarily for neonates): 4 mL/kg 3. D W10(for any pediatric patient): 5 mL/kg",
-      "To make D W w25h a pre-filled D W s50inge, discard 25 mL of the original solution and replace it with 25 mL of NSS. Gently invert (but do not shake) the syringe several times to mix the medication.",
-      "To make D W w10h a pre-filled D W s50inge, discard 40 mL of the original solution and replace it with 40 mL of NSS.",
+      "Dextrose may be administered in any concentration to adults. To administer 25 g of dextrose, administer 50 mL of D<sub>50</sub>W slow IVP or infuse 250 mL of D<sub>10</sub>W over several minutes.",
+      "The pediatric dose of 0.5 g/kg is equivalent to the following volumes: 1. D<sub>25</sub>W for all pediatric patients except neonates): 2 mL/kg, 2. D<sub>12.5</sub>W (used primarily for neonates): 4 mL/kg, 3. D<sub>10</sub>W (for any pediatric patient): 5 mL/kg",
+      "To make D<sub>25</sub>W with a pre-filled D<sub>50</sub>W syringe, discard 25 mL of the original solution and replace it with 25 mL of NSS. Gently invert (but do not shake) the syringe several times to mix the medication.",
+      "To make D<sub>10</sub>W with a pre-filled D<sub>50</sub>W syringe, discard 40 mL of the original solution and replace it with 40 mL of NSS.",
       "Dextrose in all concentrations is very irritating to the veins, so use the largest, most proximal vein available for IV access. If the medication leaks into the surrounding tissues, ulcers and necrosis (tissue death) will occur. Such tissue damage is a frequent cause of liability for EMS providers.",
       "Continuously reassess the IV site patency, and immediately discontinue the dextrose administration if patency cannot be confirmed. Pull back on the syringe plunger every 5-10 mL of the medication push. Blood should easily be aspirated into the extension tubing to confirm patency.",
-      "D W should ideally be diluted when administered via IO access. 50 Diazepam (Valium)"
+      "D<sub>50</sub>W should ideally be diluted when administered via IO access."
     ]
   },
   {
@@ -540,7 +540,7 @@ drug_data = [
       "Diazepam may precipitate when administered with D<sub>5</sub>W an is incompatible with many IV medications. Only administer with NSS or LR infusions, and flush the IV tubing well between medication administrations.",
       "The effects of benzodiazepines can be reversed with flumazenil (Romazicon). However, this medication should not be administered to patients with a history of chronic benzodiazepine use because status epilepticus may result. Generally, flumazenil is not utilized in prehospital emergency care.",
       "Some EMS systems use diazepam as a muscle relaxant for orthopedic emergencies.",
-      "Diazepam was the top-selling pharmaceutical between 1969-1982. Diltiazem (Cardizem)"
+      "Diazepam was the top-selling pharmaceutical between 1969-1982."
     ]
   },
   {
@@ -626,7 +626,7 @@ drug_data = [
       "Buccolingual crisis: facial spasms that may include tongue protrusion, difficulty swallowing, and the sensation of a “thick tongue”",
       "Oculogyric crisis: involuntary gyration of the eyes",
       "Akathisia: an ability to remain still or the inability to sit in general; the patient may stand, stare, and shuffle without any apparent purpose",
-      "Torticollis (neck spasms) and muscle spasms involving other body parts Examples of phenothiazines or phenothiazine-like medications: Compazine          Mellaril         Phenergan            Thorazine Haldol             Navane           Stelazine            Triavil Dobutamine (Dobutrex)"
+      "Torticollis (neck spasms) and muscle spasms involving other body parts Examples of phenothiazines or phenothiazine-like medications: Compazine          Mellaril         Phenergan            Thorazine Haldol             Navane           Stelazine            Triavil"
     ]
   },
   {
@@ -655,8 +655,8 @@ drug_data = [
       "Dobutamine is mixed in either D<sub>5</sub>W or NSS. Mix 200 mg in 250 mL for an 800 mcg/mL concentration. Premixed solutions are available.",
       "Dopamine is the preferred medication in prehospital care for patients in cardiogenic shock.",
       "Dobutamine may be used for patients with acute decompensated heart failure (CHF) and hypotension.",
-      "Slight alpha-1/beta-2 adrenergic effects might be present, however they (as well as tachycardia) are considered to be side effects. The absence of these effects is desirable so as to minimize the increase in myocard2al O demand.",
-      "Concurrent use of tricyclic antidepressants may promote prolonged hypertension. Dopamine (Intropin)"
+      "Slight alpha-1/beta-2 adrenergic effects might be present, however they (as well as tachycardia) are considered to be side effects. The absence of these effects is desirable so as to minimize the increase in myocardial O<sub>2</sub> demand.",
+      "Concurrent use of tricyclic antidepressants may promote prolonged hypertension."
     ]
   },
   {
@@ -731,7 +731,7 @@ drug_data = [
       "Use with caution in patients with renal dysfunction.",
       "Significant hypotension may result in patients who are hyponatremic or hypovolemic (e.g., for those patients who take diuretics).",
       "Enalapril interrupts the renin-angiotensin-aldosterone system (RAAS) by blocking the conversion of angiotensin I to angiotensin II.",
-      "It is a second-generation ACE inhibitor, and it is associated with fewer side effects than captopril. Common ACE Inhibitors (names frequently end in “-pril”): benzapril           fosinapril         peridopril          ramipril captopril           lisinopril         quinapril           tandolapril Epinephrine (Adrenaline)"
+      "It is a second-generation ACE inhibitor, and it is associated with fewer side effects than captopril. Common ACE Inhibitors (names frequently end in “-pril”): benzapril           fosinapril         peridopril          ramipril captopril           lisinopril         quinapril           tandolapril"
     ]
   },
   {
@@ -781,7 +781,7 @@ drug_data = [
       "Use caution when administering epinephrine to pregnant women, patients over 40 years of age, and people diagnosed with hypertension or cardiovascular disease.",
       "Sodium bicarbonate decreases the effectiveness of epinephrine. Administer a copious NSS flush and wait at least 1 minute after each medication push.",
       "In some EMS systems, significantly higher doses of IV epinephrine are sometimes administered to profoundly hypotensive patients with anaphylaxis.",
-      "Physicians and dentists use epinephrine in combination with local anesthetics (such as lidocaine) to anesthetize tissue. The epinephrine causes localized vasoconstriction which results in less bleeding and prolonged anesthesia. Etomidate (Amidate)"
+      "Physicians and dentists use epinephrine in combination with local anesthetics (such as lidocaine) to anesthetize tissue. The epinephrine causes localized vasoconstriction which results in less bleeding and prolonged anesthesia."
     ]
   },
   {
@@ -817,7 +817,7 @@ drug_data = [
       "The most common side effects are pain on injection, myoclonus during sedation, and nausea/vomiting during the recovery phase.",
       "Myoclonic movements are involuntary muscle spasms in the neck, chest, and extremities that should not be confused with seizure activity.",
       "Etomidate decreases cerebral perfusion, cerebral oxygen demand, and ICP.",
-      "Etomidate administration has been proven to decrease the serum cortisol level, and it should be used with caution in sepsis patients. The most significant cortisol decrease was associated with repeated IV boluses or continuous infusions. Fentanyl (Sublimaze)"
+      "Etomidate administration has been proven to decrease the serum cortisol level, and it should be used with caution in sepsis patients. The most significant cortisol decrease was associated with repeated IV boluses or continuous infusions."
     ]
   },
   {
@@ -828,7 +828,7 @@ drug_data = [
     "Classification": "Synthetic narcotic analgesic, opioid",
     "Therapeutic Effects": [
       "Acts directly on CNS opioid receptors to relieve pain",
-      "Decreases myocardial O de2and",
+      "Decreases myocardial O<sub>2</sub> demand",
       "Alleviates anxiety"
     ],
     "Indications": {
@@ -863,7 +863,7 @@ drug_data = [
       "Some systems use higher single doses of fentanyl (3 mcg/kg) as an adjunct to induction during RSI.",
       "Muscle and chest wall rigidity may occur after larger single doses (> 3 mcg/kg) are administered rapidly.",
       "Some patients self-administer fentanyl via transdermal patches (Duragesic).",
-      "Fentanyl lozenges (Actiq) are used for buccal administration in both military and civilian settings. Furosemide (Lasix)"
+      "Fentanyl lozenges (Actiq) are used for buccal administration in both military and civilian settings."
     ]
   },
   {
@@ -896,7 +896,7 @@ drug_data = [
       "Furosemide is a sulfonamide derivative (such medications are used as antibiotics). Patients with a hypersensitivity to sulfonamides such as penicillin may also experience a hypersensitivity to furosemide when it’s administered on a regular basis. Sulfonamide allergies, therefore, should not be considered to be a contraindication for single bolus doses in emergencies.",
       "Furosemide acts by inhibiting the reabsorption of sodium and chloride in the Loop of Henle as well as in the proximal and distal tubules.",
       "Because furosemide enhances the excretion of many ions, to include sodium, chloride, potassium, calcium, magnesium, and hydrogen, it should generally not be given in combination with other diuretics. Severe hypovolemia and electrolyte imbalances may result.",
-      "Use caution with pregnant patients. Furosemide should only be used in immediately life-threatening situations. Glucagon"
+      "Use caution with pregnant patients. Furosemide should only be used in immediately life-threatening situations."
     ]
   },
   {
@@ -1085,7 +1085,7 @@ drug_data = [
       "Only ~20-25% of LR will remain in the vascular space after one hour.",
       "LR is not compatible with some blood products, such as packed RBCs.",
       "Hartmann’s Solution is functionally equivalent to LR.",
-      "LR contains sodium, potassium, calcium, chloride, and lactate (a buffer). Lidocaine (Xylocaine)"
+      "LR contains sodium, potassium, calcium, chloride, and lactate (a buffer)."
     ]
   },
   {
@@ -1151,7 +1151,7 @@ drug_data = [
       "Other amide local anesthetics include mepivacaine, articaine, prilocaine, and bupivacaine.",
       "Lidocaine is routinely used in combination with epinephrine for local anesthesia during dental procedures.",
       "Concurrent use with beta blockers may cause lidocaine toxicity.",
-      "Lidocaine may be potentiated when used currently with phenytoin, procainamide, or propranolol. Lorazepam (Ativan)"
+      "Lidocaine may be potentiated when used currently with phenytoin, procainamide, or propranolol."
     ]
   },
   {
@@ -1283,7 +1283,7 @@ drug_data = [
       "Use with caution in patients with renal or hepatic dysfunction, CHF, hypertension, diabetes, and seizures.",
       "It supplements the naturally occurring hormone cortisol, which is produced in the adrenal cortex.",
       "It decreases the formation, release, and activity of histamine and other inflammatory mediators.",
-      "It precipitates with subsequent administration of calcium gluconate. Midazolam (Versed)"
+      "It precipitates with subsequent administration of calcium gluconate."
     ]
   },
   {
@@ -1356,7 +1356,7 @@ drug_data = [
     "Classification": "Narcotic analgesic, opioid",
     "Therapeutic Effects": [
       "Acts directly on CNS opioid receptors to relieve pain",
-      "Decreases myocardial O de2and",
+      "Decreases myocardial O<sub>2</sub> demand",
       "Alleviates anxiety"
     ],
     "Indications": {
@@ -1393,7 +1393,7 @@ drug_data = [
       "Larger doses may be required for burns and other mechanisms that cause severe pain.",
       "In some systems, the 5 mg/mL or 10 mg/mL concentrations of morphine are diluted to make titration easier in the prehospital environment.",
       "In smaller doses morphine does not usually exert major effects on the cardiovascular system. Due to the release of histamine, it may slightly reduce preload through peripheral vasodilation (decrease in both venous return and peripheral vascular resistance).",
-      "Morphine sulfate is no longer a recommended treatment for CHF (acute decompensated heart failure) because it’s associated with increased mortality. Naloxone (Narcan)"
+      "Morphine sulfate is no longer a recommended treatment for CHF (acute decompensated heart failure) because it’s associated with increased mortality."
     ]
   },
   {
@@ -1445,7 +1445,7 @@ drug_data = [
     "Classification": "Vasodilator",
     "Therapeutic Effects": [
       "Dilates coronary arteries, peripheral veins, and arterioles",
-      "Reduces preload and afterload (decreases myocardial workload/O d2mand)"
+      "Reduces preload and afterload (decreases myocardial workload/O<sub>2</sub> demand)"
     ],
     "Indications": [
       "Chest discomfort of suspected cardiac origin",
@@ -1479,7 +1479,7 @@ drug_data = [
       "Concurrent use of other vasodilators may potentiate NTG.",
       "Do NOT administer NTG to patients who have taken Viagra/Revatio (sildenafil) or Levitra (vardenafil) in the last 24 hours or Cialis (tadalafil) in the last 48 hours in order to prevent potentially fatal hypotension.",
       "Revatio is used for pulmonary hypertension.",
-      "Use caution when administering NTG to patients with a suspected right ventricular MI. IV access must be established before or simultaneously with NTG administration. Prepare to administer an NSS bolus, if needed. Nitrous Oxide (Nitronox)"
+      "Use caution when administering NTG to patients with a suspected right ventricular MI. IV access must be established before or simultaneously with NTG administration. Prepare to administer an NSS bolus, if needed."
     ]
   },
   {
@@ -1566,7 +1566,7 @@ drug_data = [
       "Although a 10-20 mL/kg bolus is a common adult dose, perfusion often improves with smaller volumes. Reassess after each 250-500 mL is administered, and adjust the flow rate as necessary.",
       "Infusions of larger volumes may lead to hypothermia, particularly in pediatric and elderly patients.",
       "Only ~25% of NSS will remain in the vascular space after one hour.",
-      "Saline solutions are available in other concentrations, such as 0.45%, 3%, 5%. Hypertonic saline is used to treat hyponatremia and cerebral edema. Normosol (Normosol-R)"
+      "Saline solutions are available in other concentrations, such as 0.45%, 3%, 5%. Hypertonic saline is used to treat hyponatremia and cerebral edema."
     ]
   },
   {
@@ -1607,7 +1607,7 @@ drug_data = [
       "Only ~25% of Normosol will remain in the vascular space after one hour.",
       "Normosol contains sodium, potassium, magnesium, chloride, acetate (a buffer), and gluconate (a buffer).",
       "Plasma-Lyte A/Plasma-Lyte 148 is a functionally equivalent solution.",
-      "Some forms of Normosol contain dextrose and are hypertonic. Ondansetron (Zofran)"
+      "Some forms of Normosol contain dextrose and are hypertonic."
     ]
   },
   {
@@ -1635,7 +1635,7 @@ drug_data = [
       "Use caution in patients with a history of renal or hepatic dysfunction (or in patients who use ondansetron regularly). The maximum total IV or PO dose for these patients should be 8 mg.",
       "In emergency care ondansetron is rarely contraindicated.",
       "Ondansetron is not routinely effective in treating nausea and vomiting associated with motion sickness.",
-      "Some patients also take oral ondansetron on a daily basis. Oxygen"
+      "Some patients also take oral ondansetron on a daily basis."
     ]
   },
   {
@@ -1648,12 +1648,12 @@ drug_data = [
       "Suspected or confirmed hypoxia",
       "Increased oxygen demand"
     ],
-    "Contraindications": "No significant contraindications exist during short-term, prehospital emergency care when oxygen (O 2 is used within appropriate guidelines.",
+    "Contraindications": "No significant contraindications exist during short-term, prehospital emergency care when oxygen (O<sub>2</sub> is used within appropriate guidelines.",
     "Side Effects": [
       "Generally, there are no significant side effects when2O is appropriately administered during short-term, prehospital emergency care.",
       "Serious complications may result, however, when inappropriately high concentrations are delivered to ACS, CVA, COPD, and post-ROSC   patient."
     ],
-    "Adult Dosing": "Device                O 2low Rate         O 2oncentration",
+    "Adult Dosing": "Device                O<sub>2</sub> flow Rate         O<sub>2</sub> concentration",
     "Pediatric Dosing": [
       "Similar to the adult dosing",
       "Consider blow-by delivery and/or modified devices for small children.",
@@ -1663,8 +1663,8 @@ drug_data = [
       "Never withhold oxygen from a patient who needs it!",
       "Generally, titrate the 2 flow rate for most patients to achieve an S2O of 94-99% in order to avoid complications relating to hyperoxia. The optimal SpO for some patients with COPD may be as low as 88-92%. 2",
       "In cases of carbon monoxide or cyanide exposure, administer the highest possible O2concentration since pulse oximetry will be unreliable.",
-      "Oxygen administration is not routinely used in the initial resuscitation of newborns because of the toxic risks to certain cells, to include retrolental fibroplasia (usually associated with long-ter2 O therapy). When it is administered, however, the flow rate should be carefully titrated to achieve the SpO2target as specified in current AHA guidelines.",
-      "Avoid excessive O ad2inistration in patients with a paraquat (an herbicide) exposure because it will worsen toxicity. Oxytocin (Pitocin)"
+      "Oxygen administration is not routinely used in the initial resuscitation of newborns because of the toxic risks to certain cells, to include retrolental fibroplasia (usually associated with long-term O<sub>2</sub> therapy). When it is administered, however, the flow rate should be carefully titrated to achieve the SpO2target as specified in current AHA guidelines.",
+      "Avoid excessive O<sub>2</sub> administration in patients with a paraquat (an herbicide) exposure because it will worsen toxicity."
     ]
   },
   {
@@ -1734,7 +1734,7 @@ drug_data = [
       "The Mark 1 kit requires pralidoxime and atropine to be administered via two different autoinjectors, however the DuoDote injector mixes both mediations into one solution.",
       "The autoinjectors are administered IM in the lateral thigh.",
       "An alternative method of delivering the medication is to dilute it to a total volume of 20 mL with NSS and to administer it IV push over 5-10 min.",
-      "It is not recommended for carbamate poisoning. Sodium Bicarbonate"
+      "It is not recommended for carbamate poisoning."
     ]
   },
   {
@@ -1766,7 +1766,7 @@ drug_data = [
       "Adequate alveolar ventilation is the primary treatment for the acidosis associated with cardiac arrest. Sodium bicarbonate should only be administered during cardiac arrest with adequate CPR and ventilation in progress.",
       "Hyperkalemia is often present in cardiac arrest patients who undergo hemodialysis, so sodium bicarbonate may be indicated sooner in these patients.",
       "Sodium bicarbonate is sometimes used to treat toxic exposure to cocaine, phenobarbital, salicylates, methanol, ethylene glycol, and several other substances.",
-      "Arterial blood gas analysis may more accurately determine the appropriate dosage of sodium bicarbonate in patients with metabolic acidosis. Sodium Thiosulfate"
+      "Arterial blood gas analysis may more accurately determine the appropriate dosage of sodium bicarbonate in patients with metabolic acidosis."
     ]
   },
   {
@@ -1793,7 +1793,7 @@ drug_data = [
       "Cyanide is often found in plating shops, battery shops, and in many industrial settings. It is also found in rodenticides and in the seeds/pits of fruits such as cherries, apples, and peaches.",
       "Alternative uses for sodium thiosulfate include the prevention of cyanide toxicity when sodium nitroprusside is administered as well as the prevention of nephrotoxicity when Cisplatin (a chemotherapy drug) is administered.",
       "Cyanide antidote kits may be found at industrial sites where cyanide is present. The kit will usually include three components:",
-      "Amyl nitrite: it is inhaled for 15-30 seconds and is administered with supplemental O 2 The inhalation may be repeated every 30 seconds. It may convert hemoglobin to methemoglobin.",
+      "Amyl nitrite: it is inhaled for 15-30 seconds and is administered with supplemental O<sub>2</sub>. The inhalation may be repeated every 30 seconds. It may convert hemoglobin to methemoglobin.",
       "Sodium nitrite: 300 mg IVP over 2-4 min is administered in order to convert hemoglobin to methemoglobin, which binds to the cyanide and allows aerobic metabolism to resume.",
       "Sodium thiosulfate is generally administered after sodium nitrite."
     ]

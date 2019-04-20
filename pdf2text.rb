@@ -58,6 +58,7 @@ class Parser
       end
     end
 
+    # TODO there is a problem with the drug name ending up duplicated in the previous drug's notes
     @previous_line_content = line.strip
   end
 
