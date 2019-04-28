@@ -247,9 +247,7 @@ drug_data = [
       "Acute coronary syndromes (ACS)"
     ],
     "Contraindications": {
-      "Absolute": [
-        "Hypersensitivity to aspirin"
-      ],
+      "Absolute": "Hypersensitivity to aspirin",
       "Relative": [
         "Active or recent history of GI bleeding",
         "Bleeding disorders",
@@ -308,9 +306,7 @@ drug_data = [
       ]
     },
     "Pediatric Dosing": {
-      "Unstable Bradycardia": [
-        "0.02 mg/kg rapid IVP; may repeat once in 5 min"
-      ],
+      "Unstable Bradycardia": "0.02 mg/kg rapid IVP; may repeat once in 5 min",
       "Organophosphate and Carbamate Poisoning": [
         "0.25–6 mg IM initial dose, depending on the patient’s body mass and the symptom severity",
         "0.05 mg/kg IVP initial dose; double the dose every 5 min until signs/symptoms are reversed (proper atropinization is evident)"
@@ -797,9 +793,7 @@ drug_data = [
       "Amidate"
     ],
     "Classification": "sedative-hypnotic, general anesthetic",
-    "Therapeutic Effects": [
-      "Short-acting medication that provides CNS sedation and general anesthesia"
-    ],
+    "Therapeutic Effects": "Short-acting medication that provides CNS sedation and general anesthesia",
     "Indications": [
       "Sedation-assisted intubation (SAI)",
       "Procedural sedation"
@@ -1021,9 +1015,7 @@ drug_data = [
       "To facilitate endotracheal intubation",
       "Non-narcotic analgesia"
     ],
-    "Contraindications": [
-      "Hypersensitivity to ketamine"
-    ],
+    "Contraindications": "Hypersensitivity to ketamine",
     "Side Effects": {
       "Cardiovascular": "tachycardia, hypertension",
       "Neurological": "nystagmus, diplopia, emergence reaction (see below)",
@@ -1065,23 +1057,13 @@ drug_data = [
     },
     "Side Effects": "Pulmonary edema (when large volumes are infused too quickly)",
     "Adult Dosing": {
-      "Controlled hemorrhage without shock": [
-        "100–200 mL/h"
-      ],
-      "Controlled hemorrhage with shock/non-hemorrhagic shock": [
-        "10–20 mL/kg; titrate to achieve signs of adequate perfusion"
-      ],
-      "Uncontrolled hemorrhage with shock": [
-        "Infuse at a “wide open” rate with frequent reassessment until minimum signs of adequate perfusion are achieved (permissive hypotension)"
-      ]
+      "Controlled hemorrhage without shock": "100–200 mL/h",
+      "Controlled hemorrhage with shock/non-hemorrhagic shock": "10–20 mL/kg; titrate to achieve signs of adequate perfusion",
+      "Uncontrolled hemorrhage with shock": "Infuse at a “wide open” rate with frequent reassessment until minimum signs of adequate perfusion are achieved (permissive hypotension)"
     },
     "Pediatric Dosing": {
-      "Controlled hemorrhage with shock/non-hemorrhagic shock": [
-        "20 mL/kg; repeat as indicated"
-      ],
-      "Uncontrolled hemorrhage with shock": [
-        "Infuse at a “wide open” rate with frequent reassessment until minimum signs of adequate perfusion are achieved"
-      ]
+      "Controlled hemorrhage with shock/non-hemorrhagic shock": "20 mL/kg; repeat as indicated",
+      "Uncontrolled hemorrhage with shock": "Infuse at a “wide open” rate with frequent reassessment until minimum signs of adequate perfusion are achieved"
     },
     "Notes & Precautions": [
       "Excessive fluid resuscitation in patients with uncontrolled hemorrhage may lead to increased bleeding and to the disruption of both the clotting process and the blood’s oxygen-carrying capability. Therefore, fluid resuscitation should be titrated to achieve minimum signs of adequate perfusion (improvement in mentation, peripheral pulses, and skin color/temperature with a systolic BP of 70–90 mmHg).",
@@ -1133,9 +1115,7 @@ drug_data = [
         "Frequent ectopy and brief runs of VT may respond to lower initial doses.",
         "A maintenance infusion of 1–4 mg/min should be initiated after the loading dose is given (see Notes below for dosing and preparation instructions)."
       ],
-      "Analgesia prior to IO infusion": [
-        "0.5 mg/kg (up to 40 mg) of 1% or 2% lidocaine is pushed very slowly"
-      ]
+      "Analgesia prior to IO infusion": "0.5 mg/kg (up to 40 mg) of 1% or 2% lidocaine is pushed very slowly"
     },
     "Pediatric Dosing": {
       "For all indications except analgesia prior to IO infusion": [
@@ -1265,9 +1245,7 @@ drug_data = [
       "Solu-Medrol"
     ],
     "Classification": "corticosteroid, glucocorticoid, anti-inflammatory",
-    "Therapeutic Effects": [
-      "Decrease inflammation and immune system response"
-    ],
+    "Therapeutic Effects": "Decrease inflammation and immune system response",
     "Indications": [
       "Asthma",
       "COPD (emphysema and chronic bronchitis)",
@@ -1546,23 +1524,13 @@ drug_data = [
     "Contraindications": "Large volumes of NSS should not be administered to patients with acute decompensated heart failure (CHF) or renal failure.",
     "Side Effects": "Pulmonary edema (when large volumes are infused too quickly)",
     "Adult Dosing": {
-      "Controlled hemorrhage without shock": [
-        "100–200 mL/h"
-      ],
-      "Controlled hemorrhage with shock/non-hemorrhagic shock": [
-        "10–20 mL/kg; titrate to achieve signs of adequate perfusion"
-      ],
-      "Uncontrolled hemorrhage with shock": [
-        "Infuse at a “wide open” rate with frequent reassessment until minimum signs of adequate perfusion are achieved (permissive hypotension)"
-      ]
+      "Controlled hemorrhage without shock": "100–200 mL/h",
+      "Controlled hemorrhage with shock/non-hemorrhagic shock": "10–20 mL/kg; titrate to achieve signs of adequate perfusion",
+      "Uncontrolled hemorrhage with shock": "Infuse at a “wide open” rate with frequent reassessment until minimum signs of adequate perfusion are achieved (permissive hypotension)"
     },
     "Pediatric Dosing": {
-      "Controlled hemorrhage with shock/non-hemorrhagic shock": [
-        "20 mL/kg; repeat as indicated"
-      ],
-      "Uncontrolled hemorrhage with shock": [
-        "Infuse at a “wide open” rate with frequent reassessment until minimum signs of adequate perfusion are achieved"
-      ]
+      "Controlled hemorrhage with shock/non-hemorrhagic shock": "20 mL/kg; repeat as indicated",
+      "Uncontrolled hemorrhage with shock": "Infuse at a “wide open” rate with frequent reassessment until minimum signs of adequate perfusion are achieved"
     },
     "Notes & Precautions": [
       "NSS is a <em>universal IV</em> fluid that can be used in any emergency.",
@@ -1586,23 +1554,13 @@ drug_data = [
     "Contraindications": "Large volumes of Normosol should not be administered to patients with acute decompensated heart failure (CHF) or renal failure.",
     "Side Effects": "Pulmonary edema (when large volumes are infused too quickly)",
     "Adult Dosing": {
-      "Controlled hemorrhage without shock": [
-        "100–200 mL/h"
-      ],
-      "Controlled hemorrhage with shock/non-hemorrhagic shock": [
-        "10–20 mL/kg; titrate to achieve signs of adequate perfusion"
-      ],
-      "Uncontrolled hemorrhage with shock": [
-        "Infuse at a “wide open” rate with frequent reassessment until minimum signs of adequate perfusion are achieved (permissive hypotension)"
-      ]
+      "Controlled hemorrhage without shock": "100–200 mL/h",
+      "Controlled hemorrhage with shock/non-hemorrhagic shock": "10–20 mL/kg; titrate to achieve signs of adequate perfusion",
+      "Uncontrolled hemorrhage with shock": "Infuse at a “wide open” rate with frequent reassessment until minimum signs of adequate perfusion are achieved (permissive hypotension)"
     },
     "Pediatric Dosing": {
-      "Controlled hemorrhage with shock/non-hemorrhagic shock": [
-        "20 mL/kg; repeat as indicated"
-      ],
-      "Uncontrolled hemorrhage with shock": [
-        "Infuse at a “wide open” rate with frequent reassessment until minimum signs of adequate perfusion are achieved"
-      ]
+      "Controlled hemorrhage with shock/non-hemorrhagic shock": "20 mL/kg; repeat as indicated",
+      "Uncontrolled hemorrhage with shock": "Infuse at a “wide open” rate with frequent reassessment until minimum signs of adequate perfusion are achieved"
     },
     "Notes & Precautions": [
       "Excessive fluid resuscitation may lead to increased bleeding and to the disruption of the clotting process. In addition, the blood’s oxygen-carrying capability may be diminished. Therefore, fluid resuscitation in patients with uncontrolled hemorrhage and shock should be titrated to achieve minimum signs of adequate perfusion (improvement in mentation, peripheral pulses, and skin color/temperature plus a systolic BP of 70–90 mmHg).",
@@ -1684,9 +1642,7 @@ drug_data = [
       "Initiates uterine contractions",
       "Decreases bleeding from uterine vessels"
     ],
-    "Indications": [
-      "Postpartum hemorrhage after the placenta is delivered"
-    ],
+    "Indications": "Postpartum hemorrhage after the placenta is delivered",
     "Contraindications": "Hypersensitivity to oxytocin",
     "Side Effects": {
       "Cardiovascular": "hypertension, hypotension, water retention, dysrhythmias",
