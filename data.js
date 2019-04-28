@@ -1,4 +1,3 @@
-// TODO: parse this into Ruby and do some simple normalization
 drug_data = [
   {
     "Names": [
@@ -6,7 +5,7 @@ drug_data = [
       "Tylenol",
       "APAP"
     ],
-    "Classification": "Analgesic, antipyretic",
+    "Classification": "analgesic, antipyretic",
     "Therapeutic Effects": [
       "Pain reliever",
       "Fever reducer"
@@ -45,7 +44,7 @@ drug_data = [
       "Insta-Char",
       "SuperChar"
     ],
-    "Classification": "Chemical adsorbent",
+    "Classification": "chemical adsorbent",
     "Therapeutic Effects": "Porous surface of carbon molecule adsorbs toxins and inhibits GI absorption",
     "Indications": "Oral ingestion of certain drugs or chemicals that leads to overdose or poisoning",
     "Contraindications": [
@@ -75,7 +74,7 @@ drug_data = [
       "Adenosine",
       "Adenocard"
     ],
-    "Classification": "Antidysrhythmic, endogenous nucleoside",
+    "Classification": "antidysrhythmic, endogenous nucleoside",
     "Therapeutic Effects": [
       "Depresses automaticity in the SA node",
       "Slows conduction through the AV node",
@@ -119,7 +118,7 @@ drug_data = [
       "Ventolin",
       "ProAir"
     ],
-    "Classification": "Bronchodilator; short-acting beta-2 agonist",
+    "Classification": "bronchodilator, short-acting beta-2 agonist",
     "Therapeutic Effects": "Relaxes bronchial smooth muscle by stimulating beta-2 adrenergic receptors",
     "Indications": {
       "Reversible bronchospasm associated with": [
@@ -161,7 +160,7 @@ drug_data = [
       "Cordarone",
       "Pacerone"
     ],
-    "Classification": "Antidysrhythmic",
+    "Classification": "antidysrhythmic",
     "Therapeutic Effects": [
       "Mechanism of action affects sodium, potassium, and calcium channels",
       "Has alpha- and beta-blocking properties",
@@ -211,7 +210,7 @@ drug_data = [
     "Names": [
       "Ammonia Inhalants"
     ],
-    "Classification": "Aromatic ammonia spirit, respiratory stimulant",
+    "Classification": "aromatic ammonia spirit, respiratory stimulant",
     "Therapeutic Effects": "Irritates the peripheral sensory receptors of the nasal septum to cause reflex stimulation of the respiratory and vasomotor centers",
     "Indications": "Syncope and the prevention of syncope",
     "Contraindications": [
@@ -241,7 +240,7 @@ drug_data = [
     "Names": [
       "Aspirin"
     ],
-    "Classification": "Antiplatelet, antiaggregant, antithrombotic",
+    "Classification": "antiplatelet, antiaggregant, antithrombotic",
     "Therapeutic Effects": "Inhibits platelet aggregation and vasoconstriction by inhibiting thromboxan2 A production",
     "Indications": [
       "Chest discomfort of suspected myocardial origin",
@@ -281,7 +280,7 @@ drug_data = [
     "Names": [
       "Atropine Sulfate"
     ],
-    "Classification": "Anticholinergic, vagolytic, parasympatholytic, sympathomimetic, parasympathetic blocker",
+    "Classification": "anticholinergic, vagolytic, parasympatholytic, sympathomimetic, parasympathetic blocker",
     "Therapeutic Effects": [
       "Inhibits parasympathetic stimulation by blocking acetylcholine receptors in target organs",
       "Decreases vagal tone, resulting in increased heart rate, increased SA node automaticity, and accelerated AV conduction",
@@ -343,7 +342,7 @@ drug_data = [
       "Benzocaine",
       "Hurricane Spray"
     ],
-    "Classification": "Local topical anesthetic of the ester type",
+    "Classification": "local topical anesthetic of the ester type",
     "Therapeutic Effects": "Temporary pain relief",
     "Indications": [
       "First degree burns (such as a sunburn)",
@@ -374,7 +373,7 @@ drug_data = [
     "Names": [
       "Calcium Chloride"
     ],
-    "Classification": "Electrolyte",
+    "Classification": "electrolyte",
     "Therapeutic Effects": [
       "Aids in the transmission of nerve impulses",
       "Increases contractility of cardiac, skeletal, and smooth muscles",
@@ -410,7 +409,7 @@ drug_data = [
       "Captopril",
       "Capoten"
     ],
-    "Classification": "Angiotensin-converting enzyme (ACE) inhibitor",
+    "Classification": "ACE inhibitor",
     "Therapeutic Effects": [
       "Lowers blood pressure",
       "Decreases both preload and afterload primarily by dilating the arterioles"
@@ -441,7 +440,7 @@ drug_data = [
       "Dextrose 5% in Water",
       "D<sub>5</sub>W"
     ],
-    "Classification": "Hypotonic crystalloid solution; dextrose solution",
+    "Classification": "hypotonic crystalloid solution, dextrose solution",
     "Therapeutic Effects": [
       "Provides a modest sugar source for cellular metabolism",
       "Provides free water for intravenous infusion"
@@ -461,7 +460,7 @@ drug_data = [
     "Names": [
       "Dextrose 50%/25%/10% in Water"
     ],
-    "Classification": "Hyperglycemic agent, carbohydrate",
+    "Classification": "hyperglycemic agent, carbohydrate",
     "Therapeutic Effects": "Increases blood glucose level",
     "Indications": [
       "Known blood glucose level of < 60 mg/dL when oral glucose cannot be administered",
@@ -491,7 +490,7 @@ drug_data = [
       "Diazepam",
       "Valium"
     ],
-    "Classification": "Benzodiazepine",
+    "Classification": "benzodiazepine",
     "Therapeutic Effects": [
       "Suppresses seizure activity in the brain (anticonvulsant)",
       "Acts as a sedative-hypnotic by stimulating the GABA receptor",
@@ -554,7 +553,7 @@ drug_data = [
       "Diltiazem",
       "Cardizem"
     ],
-    "Classification": "Calcium channel blocker",
+    "Classification": "calcium channel blocker",
     "Therapeutic Effects": [
       "Inhibits influx of calcium ions during depolarization of vascular smooth muscle and cardiac cells",
       "Slows AV nodal conduction time and prolongs AV nodal refractory period",
@@ -601,7 +600,7 @@ drug_data = [
       "Diphenhydramine",
       "Benadryl"
     ],
-    "Classification": "Antihistamine",
+    "Classification": "antihistamine",
     "Therapeutic Effects": [
       "Competes with histamine for H r1ceptor sites",
       "Reverses histamine-induced bronchospasm, bronchosecretions, vasodilation, and increased capillary permeability",
@@ -641,7 +640,7 @@ drug_data = [
       "Dobutamine",
       "Dobutrex"
     ],
-    "Classification": "Inotropic agent; beta-1 agonist",
+    "Classification": "inotropic agent, beta-1 agonist",
     "Therapeutic Effects": "Increases inotropy (contractility) and AV conduction",
     "Indications": [
       "Congestive heart failure (acute decompensated heart failure)",
@@ -671,7 +670,7 @@ drug_data = [
       "Dopamine",
       "Intropin"
     ],
-    "Classification": "Adrenergic agonist, sympathomimetic, catecholamine, inotropic agent",
+    "Classification": "adrenergic agonist, sympathomimetic, catecholamine, inotropic agent",
     "Therapeutic Effects": {
       "Low Dose (1–4 mcg/kg/min)": [
         "Dilates renal and mesenteric arteries by stimulating dopamine receptors",
@@ -715,7 +714,7 @@ drug_data = [
       "Enalaprilat",
       "Vasotec"
     ],
-    "Classification": "Angiotensin-converting enzyme (ACE) inhibitor",
+    "Classification": "ACE inhibitor",
     "Therapeutic Effects": [
       "Lowers blood pressure",
       "Decreases both preload and afterload primarily by dilating the arterioles"
@@ -747,7 +746,7 @@ drug_data = [
       "Epinephrine",
       "Adrenaline"
     ],
-    "Classification": "Adrenergic agonist, sympathomimetic, catecholamine",
+    "Classification": "adrenergic agonist, sympathomimetic, catecholamine",
     "Therapeutic Effects": [
       "Improves cardiac output by acting on beta-1 receptors to increase chronotropy (heart rate), inotropy (contractility), and dromotropy (conduction velocity), and automaticity",
       "Relaxes bronchial smooth muscle by acting on beta-2 receptors",
@@ -797,7 +796,7 @@ drug_data = [
       "Etomidate",
       "Amidate"
     ],
-    "Classification": "Sedative-hypnotic, general anesthetic",
+    "Classification": "sedative-hypnotic, general anesthetic",
     "Therapeutic Effects": [
       "Short-acting medication that provides CNS sedation and general anesthesia"
     ],
@@ -833,7 +832,7 @@ drug_data = [
       "Fentanyl",
       "Sublimaze"
     ],
-    "Classification": "Synthetic narcotic analgesic, opioid",
+    "Classification": "synthetic narcotic analgesic, opioid",
     "Therapeutic Effects": [
       "Acts directly on CNS opioid receptors to relieve pain",
       "Decreases myocardial O<sub>2</sub> demand",
@@ -879,7 +878,7 @@ drug_data = [
       "Furosemide",
       "Lasix"
     ],
-    "Classification": "Loop diuretic",
+    "Classification": "loop diuretic",
     "Therapeutic Effects": "Decreases preload by increasing urine output; some slight preload reduction may also stem from vasodilation and venous pooling",
     "Indications": "Acute decompensated heart failure (CHF) with intravascular volume overload",
     "Contraindications": [
@@ -911,7 +910,7 @@ drug_data = [
     "Names": [
       "Glucagon"
     ],
-    "Classification": "Hyperglycemic agent, hormone",
+    "Classification": "hyperglycemic agent, hormone",
     "Therapeutic Effects": {
       "Increases blood glucose level by": [
         "Glycogenolysis: the conversion of hepatic glycogen to glucose",
@@ -946,7 +945,7 @@ drug_data = [
       "Hydroxocobalamin",
       "Cyanokit"
     ],
-    "Classification": "Antidote",
+    "Classification": "antidote",
     "Therapeutic Effects": "Converts cyanide to cyanocobalamin (Vitamin B12) so it can be safely excreted in urine",
     "Indications": "Known or suspected cyanide poisoning",
     "Contraindications": "Hypersensitivity to hydroxocobalamin",
@@ -976,7 +975,7 @@ drug_data = [
       "Ipratropium Bromide",
       "Atrovent"
     ],
-    "Classification": "Anticholinergic",
+    "Classification": "anticholinergic",
     "Therapeutic Effects": [
       "Bronchodilator",
       "Inhibits mucus secretion"
@@ -1012,7 +1011,7 @@ drug_data = [
       "Ketamine Hydrochloride",
       "Ketalar"
     ],
-    "Classification": "Dissociative general anesthetic",
+    "Classification": "dissociative general anesthetic",
     "Therapeutic Effects": [
       "Produces dissociative analgesia (including general anesthesia)",
       "Bronchodilation with minimal or no ventilatory depression"
@@ -1054,7 +1053,7 @@ drug_data = [
       "Lactated Ringer’s Solution",
       "LR"
     ],
-    "Classification": "Isotonic crystalloid solution",
+    "Classification": "isotonic crystalloid solution",
     "Therapeutic Effects": "Replaces water and electrolytes",
     "Indications": "Hypovolemia",
     "Contraindications": {
@@ -1101,7 +1100,7 @@ drug_data = [
       "Lidocaine",
       "Xylocaine"
     ],
-    "Classification": "Antidysrhythmic, amide local anesthetic",
+    "Classification": "antidysrhythmic, amide local anesthetic",
     "Therapeutic Effects": [
       "Decreases ventricular irritability",
       "Raises the fibrillatory threshold",
@@ -1167,7 +1166,7 @@ drug_data = [
       "Lorazepam",
       "Ativan"
     ],
-    "Classification": "Benzodiazepine",
+    "Classification": "benzodiazepine",
     "Therapeutic Effects": [
       "Suppresses seizure activity in the brain (anticonvulsant)",
       "Acts as a sedative-hypnotic by stimulating the GABA receptor",
@@ -1219,7 +1218,7 @@ drug_data = [
       "Magnesium Sulfate",
       "MgSO<sub>4</sub>"
     ],
-    "Classification": "Electrolyte, antidysrhythmic",
+    "Classification": "electrolyte, antidysrhythmic",
     "Therapeutic Effects": [
       "Critical electrolyte that participates in many metabolic cellular reactions",
       "Smooth muscle relaxation (e.g., blood vessels, bronchioles, uterus)"
@@ -1265,7 +1264,7 @@ drug_data = [
       "Methylprednisolone Sodium Succinate",
       "Solu-Medrol"
     ],
-    "Classification": "Corticosteroid, glucocorticoid, anti-inflammatory",
+    "Classification": "corticosteroid, glucocorticoid, anti-inflammatory",
     "Therapeutic Effects": [
       "Decrease inflammation and immune system response"
     ],
@@ -1299,7 +1298,7 @@ drug_data = [
       "Midazolam",
       "Versed"
     ],
-    "Classification": "Benzodiazepine",
+    "Classification": "benzodiazepine",
     "Therapeutic Effects": [
       "Suppresses seizure activity in the brain (anticonvulsant)",
       "Acts as a sedative-hypnotic by stimulating the GABA receptor",
@@ -1360,7 +1359,7 @@ drug_data = [
     "Names": [
       "Morphine Sulfate"
     ],
-    "Classification": "Narcotic analgesic, opioid",
+    "Classification": "narcotic analgesic, opioid",
     "Therapeutic Effects": [
       "Acts directly on CNS opioid receptors to relieve pain",
       "Decreases myocardial O<sub>2</sub> demand",
@@ -1408,7 +1407,7 @@ drug_data = [
       "Naloxone",
       "Narcan"
     ],
-    "Classification": "Opioid antagonist",
+    "Classification": "opioid antagonist",
     "Therapeutic Effects": [
       "Competitively blocks various opioid receptor sites",
       "Reverses ventilatory depression, sedation, and pupillary effects of opioids"
@@ -1450,7 +1449,7 @@ drug_data = [
       "Nitrolingual",
       "Nitro-Bid"
     ],
-    "Classification": "Vasodilator",
+    "Classification": "vasodilator",
     "Therapeutic Effects": [
       "Dilates coronary arteries, peripheral veins, and arterioles",
       "Reduces preload and afterload (decreases myocardial workload/O<sub>2</sub> demand)"
@@ -1493,7 +1492,7 @@ drug_data = [
       "Nitrous Oxide",
       "Nitronox"
     ],
-    "Classification": "Analgesic, anxiolytic, anesthetic gas",
+    "Classification": "analgesic, anxiolytic, anesthetic gas",
     "Therapeutic Effects": [
       "Depresses CNS to relieve pain and to reduce anxiety",
       "Increases cerebral perfusion secondary to vasodilation",
@@ -1536,7 +1535,7 @@ drug_data = [
       "0.9% NaCl Solution",
       "NSS"
     ],
-    "Classification": "Isotonic crystalloid solution",
+    "Classification": "isotonic crystalloid solution",
     "Therapeutic Effects": "Replaces water and electrolytes",
     "Indications": [
       "Hypovolemia",
@@ -1580,7 +1579,7 @@ drug_data = [
       "Normosol",
       "Normosol-R"
     ],
-    "Classification": "Isotonic crystalloid solution",
+    "Classification": "isotonic crystalloid solution",
     "Therapeutic Effects": "Replaces water and electrolytes",
     "Indications": "Hypovolemia",
     "Contraindications": "Large volumes of Normosol should not be administered to patients with acute decompensated heart failure (CHF) or renal failure.",
@@ -1621,7 +1620,7 @@ drug_data = [
       "Ondansetron",
       "Zofran"
     ],
-    "Classification": "Antiemetic, serotonin antagonist",
+    "Classification": "antiemetic, serotonin antagonist",
     "Therapeutic Effects": "Decreases nausea and vomiting by blocking certain serotonin receptor sites on both central chemoreceptors and peripheral vagus nerve terminals",
     "Indications": "Prevention and/or treatment of nausea and vomiting",
     "Contraindications": [
@@ -1649,7 +1648,7 @@ drug_data = [
       "Oxygen",
       "O<sub>2</sub>"
     ],
-    "Classification": "Gas",
+    "Classification": "gas",
     "Therapeutic Effects": "Reacts with glucose in the mitochondria to produce a usable form of energy (ATP) that is essential for normal cellular function",
     "Indications": [
       "Suspected or confirmed hypoxia",
@@ -1679,7 +1678,7 @@ drug_data = [
       "Oxytocin",
       "Pitocin"
     ],
-    "Classification": "Synthetic hormone",
+    "Classification": "synthetic hormone",
     "Therapeutic Effects": [
       "Initiates uterine contractions",
       "Decreases bleeding from uterine vessels"
@@ -1712,7 +1711,7 @@ drug_data = [
       "2-PAM",
       "Protopam"
     ],
-    "Classification": "Cholinesterase reactivator",
+    "Classification": "cholinesterase reactivator",
     "Therapeutic Effects": [
       "Reactivates the enzyme acetylcholinesterase, which allows acetylcholine to be metabolized in order to decrease the excessive parasympathetic stimulation caused by the pesticide or nerve agent",
       "Relieves paralysis of the muscles of breathing"
@@ -1748,7 +1747,7 @@ drug_data = [
     "Names": [
       "Sodium Bicarbonate"
     ],
-    "Classification": "Alkalinizing agent",
+    "Classification": "alkalinizing agent",
     "Therapeutic Effects": [
       "Increases blood pH",
       "Lowers serum potassium level"
@@ -1780,7 +1779,7 @@ drug_data = [
     "Names": [
       "Sodium Thiosulfate"
     ],
-    "Classification": "Cyanide antidote",
+    "Classification": "cyanide antidote",
     "Therapeutic Effects": "Converts cyanide to thiocyanate, which is both relatively nontoxic and readily excreted in the urine",
     "Indications": [
       "Suspected cyanide poisoning",
@@ -1811,7 +1810,7 @@ drug_data = [
       "Anectine",
       "Quelicin"
     ],
-    "Classification": "Depolarizing neuromuscular blocking agent",
+    "Classification": "depolarizing neuromuscular blocking agent",
     "Therapeutic Effects": "Competitively binds to receptors to block the action of acetylcholine at the neuromuscular junction",
     "Indications": "Muscle paralysis used to facilitate endotracheal intubation",
     "Contraindications": [
@@ -1849,7 +1848,7 @@ drug_data = [
       "Brethaire",
       "Bricanyl"
     ],
-    "Classification": "Bronchodilator, sympathetic agonist",
+    "Classification": "bronchodilator, sympathetic agonist",
     "Therapeutic Effects": "Relaxes bronchial smooth muscle via beta-2 adrenergic receptors",
     "Indications": {
       "Bronchospasm associated with": [
