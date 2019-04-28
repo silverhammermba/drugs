@@ -1352,11 +1352,12 @@ drug_data = [
       "Use a large muscle for IM injections, such as the lateral thigh or the gluteus maximus. The deltoid may be considered for injection volumes of no more than 1 mL. Always use the 5 mg/mL concentration for IM or IN administration.",
       "Midazolam is a preferred benzodiazepine for IM injection because of its quicker onset of action and time to peak effect when compared to lorazepam and diazepam.",
       "Midazolam is sometimes diluted to a 1 mg/mL concentration (or less) prior to IV administration.",
-      "Anterograde amnesia corresponds to the degree of drowsiness. Morphine Sulfate"
+      "Anterograde amnesia corresponds to the degree of drowsiness."
     ]
   },
   {
     "Names": [
+      "Morphine",
       "Morphine Sulfate"
     ],
     "Classification": "narcotic analgesic, opioid",

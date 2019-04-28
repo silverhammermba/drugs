@@ -38,15 +38,8 @@ function obscure_name(drug, text) {
 	return text;
 }
 
-function format_append_section(name, section, element, level, hidden, drug, correct) {
+function create_format_section(name, section, level, hidden, drug, correct) {
 	var div = document.createElement('div');
-
-	if (drug && !correct) {
-		var header = document.createElement('h' + level);
-		header.classList.add('drug_name');
-		header.innerHTML = drug_name(drug);
-		div.appendChild(header);
-	}
 
 	div.addEventListener("click", function() {
 		div.classList.add('clicked');
@@ -74,7 +67,7 @@ function format_append_section(name, section, element, level, hidden, drug, corr
 		div.appendChild(list);
 	} else if (section && (typeof section === "object")) {
 		for (var subsection in section) {
-			format_append_section(subsection, section[subsection], div, level + 1, hidden, drug);
+			div.appendChild(create_format_section(subsection, section[subsection], level + 1, hidden, drug));
 		}
 	} else if (typeof section === "string") {
 		var par = document.createElement('p');
@@ -88,7 +81,7 @@ function format_append_section(name, section, element, level, hidden, drug, corr
 		console.log("Can't format section:", section);
 	}
 
-	element.appendChild(div);
+	return div;
 }
 
 function drug_h2(drug) {
@@ -113,7 +106,7 @@ function create_drug_element(drug) {
 	element.appendChild(drug_h2(drug));
 
 	for (var i = 0; i < sections.length; ++i) {
-		format_append_section(sections[i], drug[sections[i]], element, 3, false);
+		element.appendChild(create_format_section(sections[i], drug[sections[i]], 3, false));
 	}
 
 	return element;
@@ -136,7 +129,17 @@ function create_random_section_element(drugs) {
 		var correct = (shuffled_drugs[i][random_section] === selection[0][random_section]);
 		var actual_drug = drug_name(shuffled_drugs[i]);
 		// TODO: only shows one drug, even when multiple have the same text
-		format_append_section(random_section, shuffled_drugs[i][random_section], element, 3, true, shuffled_drugs[i], correct);
+
+		var div = create_format_section(random_section, shuffled_drugs[i][random_section], 3, true, shuffled_drugs[i], correct);
+
+		if (!correct) {
+			var header = document.createElement('h3');
+			header.classList.add('drug_name');
+			header.innerHTML = drug_name(shuffled_drugs[i]);
+			div.prepend(header);
+		}
+
+		element.appendChild(div);
 	}
 
 	return element
