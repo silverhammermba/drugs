@@ -30,13 +30,22 @@ window.sections = [
     "Notes & Precautions"
 ]
 
-function format_append_section(name, section, element, level, correct, drug_name) {
+function obscure_name(drug, text) {
+	for (var i = 0; i < drug.Names.length; ++i) {
+		// TODO: fails for Oxygen contraindications???
+		var pattern = new RegExp('\\b(' + drug.Names[i] + ')', 'i');
+		text = text.replace(pattern, '<span class="redacted">REDACTED</span><span class="name">$1</span>');
+	}
+	return text;
+}
+
+function format_append_section(name, section, element, level, hidden, drug, correct) {
 	var div = document.createElement('div');
 
-	if (drug_name) {
+	if (drug && !correct) {
 		var header = document.createElement('h' + level);
 		header.classList.add('drug_name');
-		header.innerHTML = drug_name;
+		header.innerHTML = drug_name(drug);
 		div.appendChild(header);
 	}
 
@@ -56,17 +65,25 @@ function format_append_section(name, section, element, level, correct, drug_name
 		var list = document.createElement('ul');
 		for (var j = 0; j < section.length; ++j) {
 			var item = document.createElement('li');
-			item.innerHTML = section[j];
+			if (hidden) {
+				item.innerHTML = obscure_name(drug, section[j]);
+			} else {
+				item.innerHTML = section[j];
+			}
 			list.appendChild(item);
 		}
 		div.appendChild(list);
 	} else if (section && (typeof section === "object")) {
 		for (var subsection in section) {
-			format_append_section(subsection, section[subsection], div, level + 1);
+			format_append_section(subsection, section[subsection], div, level + 1, hidden, drug);
 		}
 	} else if (typeof section === "string") {
 		var par = document.createElement('p');
-		par.innerHTML = section;
+		if (hidden) {
+			par.innerHTML = section;
+		} else {
+			par.innerHTML = obscure_name(drug, section);
+		}
 		div.appendChild(par);
 	} else {
 		console.log("Can't format section:", section);
@@ -97,7 +114,7 @@ function create_drug_element(drug) {
 	element.appendChild(drug_h2(drug));
 
 	for (var i = 0; i < sections.length; ++i) {
-		format_append_section(sections[i], drug[sections[i]], element, 3);
+		format_append_section(sections[i], drug[sections[i]], element, 3, false);
 	}
 
 	return element;
@@ -107,9 +124,11 @@ function create_random_section_element(drugs) {
 	// TODO: this could select random drugs with the same section content, which would make a stupid question
 	var selection = getRandomSubarray(drugs, 4);
 
+	// create section with header
 	var element = document.createElement('section');
 	element.appendChild(drug_h2(selection[0]));
 
+	// pick a random section to quiz on
 	var random_section = sections.randomElement();
 
 	var shuffled_drugs = shuffleArray(selection);
@@ -118,12 +137,13 @@ function create_random_section_element(drugs) {
 		var correct = (shuffled_drugs[i][random_section] === selection[0][random_section]);
 		var actual_drug = drug_name(shuffled_drugs[i]);
 		// TODO: only shows one drug, even when multiple have the same text
-		format_append_section(random_section, shuffled_drugs[i][random_section], element, 3, correct, actual_drug);
+		format_append_section(random_section, shuffled_drugs[i][random_section], element, 3, true, shuffled_drugs[i], correct);
 	}
 
 	return element
 }
 
+// TODO: map drug_data to inner html?
 document.body.appendChild(create_random_section_element(drug_data));
 
 /*

@@ -1710,7 +1710,8 @@ drug_data = [
     "Names": [
       "Pralidoxime Chloride",
       "2-PAM",
-      "Protopam"
+      "Protopam",
+      "Pralidoxime"
     ],
     "Classification": "cholinesterase reactivator",
     "Therapeutic Effects": [

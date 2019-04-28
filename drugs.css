@@ -21,3 +21,19 @@ section > div.clicked h3.drug_name {
 section > div.clicked.correct h3.drug_name {
 	display: none;
 }
+
+.redacted {
+	background-color: black;
+}
+
+div.clicked .redacted {
+	display: none;
+}
+
+span.name {
+	display: none;
+}
+
+div.clicked span.name {
+	display: inline;
+}
