@@ -3,7 +3,9 @@ drug_data = [
     "Names": [
       "Acetaminophen",
       "Tylenol",
-      "APAP"
+      "APAP",
+      "Acetylsalicylic acid",
+      "ASA"
     ],
     "Classification": "analgesic, antipyretic",
     "Therapeutic Effects": [
@@ -14,9 +16,7 @@ drug_data = [
       "Musculoskeletal pain (including pain associated with trauma)",
       "Fever (including fever associated with seizures)"
     ],
-    "Contraindications": [
-      "Hypersensitivity to acetaminophen"
-    ],
+    "Contraindications": "Hypersensitivity to acetaminophen",
     "Side Effects": {
       "Other": "nausea, headache, rash"
     },
@@ -26,7 +26,7 @@ drug_data = [
       "Should not be administered to patients who are < 3 months of age"
     ],
     "Notes & Precautions": [
-      "Acetaminophen (APAP) is generally not administered to patients with a fever until the temperature exceeds 38°C/100.4°F.",
+      "Acetaminophen is generally not administered to patients with a fever until the temperature exceeds 38°C/100.4°F.",
       "It should also not be administered to patients who have received a dose within the past 4 hours.",
       "Administer with caution to patients with hepatic or renal dysfunction, chronic malnutrition, and chronic alcohol abuse.",
       "Do not exceed 4 g/day from all sources for patients who are 12 years of age and older.",
@@ -264,7 +264,6 @@ drug_data = [
     "Adult Dosing": "324 mg PO (chewed and swallowed)",
     "Pediatric Dosing": "Not used in prehospital emergency care",
     "Notes & Precautions": [
-      "The standard abbreviation for aspirin is ASA (acetylsalicylic acid).",
       "Even if the patient has already taken her daily dose of ASA, a full 324 mg dose should still be administered for suspected ACS.",
       "It is sometimes indicated in the hospital for ischemic strokes that cannot be treated with fibrinolytic therapy.",
       "Aspirin administration, even in doses as low as 162 mg, significantly decreases mortality for MI patients.",
@@ -452,7 +451,7 @@ drug_data = [
     "Adult Dosing": "It is generally used in prehospital emergency care only for mixing medications that are administered via IV infusion. It is not utilized for a KVO infusion or for a bolus in hypovolemic patients. The infusion rate is determined by the medication that is added to it.",
     "Pediatric Dosing": "Same as adult",
     "Notes & Precautions": [
-      "D<sub>5</sub>W5is supplied in 25–1000 mL bags, although the 100 mL and 250 mL ones are the most commonly used sizes in ambulances.",
+      "D<sub>5</sub>W is supplied in 25–1000 mL bags, although the 100 mL and 250 mL ones are the most commonly used sizes in ambulances.",
       "Because D<sub>5</sub>W is a hypotonic crystalloid solution, its water content will 5 begin to leave the intravascular space within 10–20 minutes.",
       "Dextrose 5% is sometimes premixed with: 0.9% NaCl solution (D<sub>5</sub>NS), 0.45% NaCl solution (D<sub>5</sub>-½NS), 0.225% NaCl solution (D<sub>5</sub>-¼NS), Lactated Ringer’s Solution (D<sub>5</sub>LR). These solutions are rarely used for prehospital emergency care and are most often utilized during interfacility transfers or for long-term care when patients require a constant infusion of both water and glucose."
     ]
