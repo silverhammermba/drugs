@@ -32,7 +32,6 @@ window.sections = [
 
 function obscure_name(drug, text) {
 	for (var i = 0; i < drug.Names.length; ++i) {
-		// TODO: fails for Oxygen contraindications???
 		var pattern = new RegExp('\\b(' + drug.Names[i] + ')', 'i');
 		text = text.replace(pattern, '<span class="redacted">REDACTED</span><span class="name">$1</span>');
 	}
@@ -80,9 +79,9 @@ function format_append_section(name, section, element, level, hidden, drug, corr
 	} else if (typeof section === "string") {
 		var par = document.createElement('p');
 		if (hidden) {
-			par.innerHTML = section;
-		} else {
 			par.innerHTML = obscure_name(drug, section);
+		} else {
+			par.innerHTML = section;
 		}
 		div.appendChild(par);
 	} else {

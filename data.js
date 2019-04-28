@@ -1655,7 +1655,7 @@ drug_data = [
       "Suspected or confirmed hypoxia",
       "Increased oxygen demand"
     ],
-    "Contraindications": "No significant contraindications exist during short-term, prehospital emergency care when oxygen (O<sub>2</sub>) is used within appropriate guidelines.",
+    "Contraindications": "No significant contraindications exist during short-term, prehospital emergency care when oxygen is used within appropriate guidelines.",
     "Side Effects": [
       "Generally, there are no significant side effects when O<sub>2</sub> is appropriately administered during short-term, prehospital emergency care.",
       "Serious complications may result, however, when inappropriately high concentrations are delivered to ACS, CVA, COPD, and post-ROSC   patient."
