@@ -371,7 +371,8 @@ drug_data = [
   },
   {
     "Names": [
-      "Calcium Chloride"
+      "Calcium Chloride",
+      "CaCl"
     ],
     "Classification": "electrolyte",
     "Therapeutic Effects": [
@@ -394,7 +395,7 @@ drug_data = [
     "Adult Dosing": "1 g IVP over 3–5 min (more quickly during cardiac arrest)",
     "Pediatric Dosing": "20 mg/kg (0.2 mL/kg of a 10% solution) IVP over 3–5 min (more quickly during cardiac arrest)",
     "Notes & Precautions": [
-      "Calcium chloride (CaCl) is usually supplied in a 10% solution that yields a concentration of 100 mg/mL.",
+      "Calcium chloride is usually supplied in a 10% solution that yields a concentration of 100 mg/mL.",
       "Repeat doses are used in some systems for the indications above.",
       "CaCl should be administered through a larger vein to minimize irritation to the vessel.",
       "IV patency should be continuously reassessed, as infiltration of CaCl will cause tissue necrosis.",
@@ -602,7 +603,7 @@ drug_data = [
     ],
     "Classification": "antihistamine",
     "Therapeutic Effects": [
-      "Competes with histamine for H r1ceptor sites",
+      "Competes with histamine for H<sub>1</sub> receptor sites",
       "Reverses histamine-induced bronchospasm, bronchosecretions, vasodilation, and increased capillary permeability",
       "Relaxes non-vascular smooth muscle"
     ],
